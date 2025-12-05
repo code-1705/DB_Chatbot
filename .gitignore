@@ -1,0 +1,24 @@
+# --- Security (CRITICAL) ---
+.env
+.env.docker
+.env.production
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Virtual Environments (Do not upload these) ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- IDE Settings (Optional, keeps repo clean) ---
+.vscode/
+.idea/
+
+# --- Mac/Windows System Files ---
+.DS_Store
+Thumbs.db
