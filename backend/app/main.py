@@ -8,6 +8,17 @@ from app.services.llm import generate_query_intent, synthesize_response, general
 
 app = FastAPI(title=settings.APP_NAME)
 
+from fastapi.middleware.cors import CORSMiddleware
+
+# Enable CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], # In production, replace with specific domain
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # --- HERE IS YOUR API ENDPOINT ---
 @app.post("/chat/{user_id}")
 async def chat_endpoint(user_id: str, input_data: ChatInput):

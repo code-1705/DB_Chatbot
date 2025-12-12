@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     # Constants
     SALES_COLLECTION: str = "sales_data"
     HISTORY_COLLECTION: str = "user_chat_history"
-    MODEL_NAME: str = "gemini-2.0-flash"
+    MODEL_NAME: str = "gemini-2.5-flash"
 
     class Config:
         env_file = ".env"
