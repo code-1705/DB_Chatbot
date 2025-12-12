@@ -115,8 +115,9 @@ const ChatInterface = () => {
             <div className="chat-area">
                 <header className="chat-header">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                        <img src="/logo.png" alt="DB Chatbot" style={{ width: '40px', height: '40px' }} />
                         <div>
-                            <div style={{ fontWeight: '600' }}>Sales Assistant</div>
+                            <div style={{ fontWeight: '600', fontSize: '1.1rem' }}>Sales Assistant</div>
                             <div style={{ fontSize: '0.8rem', color: '#64748b' }}>Connected to MongoDB</div>
                         </div>
                     </div>
