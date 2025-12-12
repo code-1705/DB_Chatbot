@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import MessageBubble from './MessageBubble';
 import '../styles/Chat.css';
 
-const BASE_URL = '';
+const BASE_URL = import.meta.env.VITE_API_URL || '';
 
 const ChatInterface = () => {
     const [messages, setMessages] = useState([]);
